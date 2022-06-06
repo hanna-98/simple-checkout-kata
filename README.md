@@ -13,7 +13,7 @@ This week’s prices are the following:
 
 | Item | Unit Price (in pence) | Special Price       |
 | ---- | --------------------- | ------------------- |
-| A    | 50                    |
+| A    | 50                    |                     |
 | B    | 75                    | 2 for £1.25         |
 | C    | 25                    | Buy 3, get one free |
 
