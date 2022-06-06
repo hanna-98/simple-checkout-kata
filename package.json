@@ -1,0 +1,22 @@
+{
+  "name": "simple-checkout-kata",
+  "version": "1.0.0",
+  "description": "## task",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanna-98/simple-checkout-kata.git"
+  },
+  "author": "hanna-98",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hanna-98/simple-checkout-kata/issues"
+  },
+  "homepage": "https://github.com/hanna-98/simple-checkout-kata#readme",
+  "devDependencies": {
+    "jasmine": "^4.1.0"
+  }
+}
