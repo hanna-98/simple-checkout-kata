@@ -18,12 +18,12 @@ describe('Promotion applied', () => {
         expect(checkout.total()).toEqual(2.00);
     })
 
-    xit('Should apply "buy 3 get one free" discount', () => {
+    it('Should apply "buy 3 get one free" discount', () => {
         checkout = new Checkout(['C', 'C', 'C', 'C']);
         expect(checkout.total()).toEqual(0.75);
     })
 
-    xit('Should apply "2 for £1.25" AND "buy 3 get one free" discounts', () => {
+    it('Should apply "2 for £1.25" AND "buy 3 get one free" discounts', () => {
         checkout = new Checkout(['B', 'B', 'C', 'C', 'C', 'C']);
         expect(checkout.total()).toEqual(2.00);
     })
