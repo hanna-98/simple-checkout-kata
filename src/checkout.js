@@ -1,19 +1,16 @@
-// const items = {
-//     A: 0.50,
-//     B: 0.75,
-//     C: 0.25
-// }
-
 class Checkout {    
     constructor(basket){
         this.basket = basket;
-        this.cost = 0;
+    }
+
+    getBasket(){
+        return this.basket;
     }
 
     total(){
-        let a = this.basket.filter(item => item === 'A'); // ['A', 'A',...]
-        let b = this.basket.filter(item => item === 'B'); // ['B', 'B',...]
-        let c = this.basket.filter(item => item === 'C'); // ['C', 'C',...]
+        let a = this.basket.filter(item => item === 'A');
+        let b = this.basket.filter(item => item === 'B');
+        let c = this.basket.filter(item => item === 'C');
         let costA = a.length * 0.50;
         let costB = 0.00;
         let costC = 0.00;
@@ -28,9 +25,8 @@ class Checkout {
             costC = (c.length * 3/4) * 0.25;
         } else {
             costC = ((c.length - (c.length % 4)) * 3/4 * 0.25) + ((c.length % 4) * 0.25);
-        }
-        this.cost = costA + costB + costC;
-        return this.cost;
+        } 
+        return costA + costB + costC;
     }
 }
 
